@@ -1,0 +1,29 @@
+alias df='df -h'
+alias du='du -h'
+alias ll='ls -lG'
+alias la='ls -AG'
+alias l='ls -CFG'
+alias grep='grep --color'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias psg='ps aux | grep'
+
+# Docker related stuff
+alias mss='make stop && make start'
+alias mssl='make stop && make start && make logs'
+alias docker-up='docker-compose up -d --build'
+alias docker-down='docker-compose down -t 1 --remove-orphans'
+alias docker-feierabend='docker stop $(docker ps -aq)'
+alias docker-clean='docker stop $(docker ps -aq) ; docker rm $(docker container ls --filter "status=exited" -aq) ; docker rmi $(docker image ls -aq) ; docker rmi $(docker image ls -aq --filter "dangling=true") ; docker volume rm $(docker volume ls -q)'
+alias traefik='origin=$(pwd) && cd ~/Sites/docker/traefik && make start && cd $origin'
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='brew update; brew upgrade; brew upgrade --cask; brew cleanup -s; omz update; sudo gem update –no-ri –no-rdoc; sudo softwareupdate -i -a; mas upgrade'
+
+# Get IP Addresses
+alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"

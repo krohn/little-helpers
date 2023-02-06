@@ -1,0 +1,18 @@
+# If you come from bash you might have to change your $PATH.
+export PATH=/usr/local/bin:$HOME/bin:/usr/bin:/opt/local/bin:/bin:/usr/local/sbin:/usr/sbin:/opt/local/sbin:/sbin:/opt/X11/bin:$PATH
+export PATH=~/betterbash:$PATH
+export EDITOR='nano'
+
+HYPHEN_INSENSITIVE="true"
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
+HIST_STAMPS="dd.mm.yyyy"
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+plugins=(
+  alias-finder autojump brew colorize common-aliases composer dnf docker docker-compose git history osx pip python ruby sublime sudo zsh-autosuggestions zsh-syntax-highlighting
+)
+source $ZSH/oh-my-zsh.sh
