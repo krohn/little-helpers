@@ -39,17 +39,7 @@ Applications
 .wget-hsts
 .wpscan/
 .yarnrc
-.zcompdump-KKr MacBook Pro-5.8
-.zcompdump-Krohn MacBookPro 2018-5.8
-.zcompdump-KrohnMacPro2018-5.8
-.zcompdump-MacBook Work-5.8
-.zcompdump-MacBook Work-5.8.1
-.zcompdump-MacBook Work-5.9
-.zcompdump-MacBook W\303\266rk-5.8.1
-.zcompdump-MacBook W\303\266rk-5.8.1.zwc
-.zcompdump-MacBook W\303\266rk-5.9
-.zcompdump-MacBook W\303\266rk-5.9.zwc
-.zcompdump-MacBook-BITSERV-Karsten-5.8
+.zcompdump*
 .zsh_history
 .zsh_sessions
 .zshrc
@@ -78,3 +68,4 @@ soapui-settings.xml
 ssh.lst
 xml
 Public
+*.pdf
