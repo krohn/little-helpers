@@ -23,10 +23,8 @@ while test $# -gt 0; do
     done
 done
 
-
 if [ "$error" = true ] ; then
     exit 1
 else
     exit 0
 fi
-
