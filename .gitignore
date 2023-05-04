@@ -69,3 +69,4 @@ ssh.lst
 xml
 Public
 *.pdf
+.fig
